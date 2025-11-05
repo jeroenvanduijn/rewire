@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan je gratis assessment gesprek met RE.WIRE. Start je 12-weken transformatie vandaag.">
+    <title>Plan Een Afspraak | RE.WIRE</title>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/sharp-grotesk-bold.woff2" crossorigin>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Acuity Scheduling Integration -->
+    <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/buttontext.css" id="acuity-button-styles" />
+    <script src="https://embed.acuityscheduling.com/embed/button/YOUR-ACUITY-ID.js" async></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Spring naar hoofdinhoud</a>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav" role="navigation" aria-label="Hoofdnavigatie">
+                <a href="/" class="logo">RE.WIRE</a>
+                <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/on-locatie">On Locatie</a></li>
+                    <li><a href="/add-on">Add-On</a></li>
+                    <li><a href="/tarieven">Tarieven</a></li>
+                    <li><a href="/succesverhalen">Succesverhalen</a></li>
+                    <li><a href="/over-ons">Over Ons</a></li>
+                    <li><a href="/kennisbank">Kennisbank</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <a href="/plan-afspraak" class="btn btn-primary nav-cta" aria-current="page">Start Your Transformation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-headline">Plan Je Gratis Assessment</h1>
+                    <p class="hero-subheadline">Start je transformatie met een vrijblijvend assessment gesprek. We bespreken je doelen, uitdagingen en maken een plan op maat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-intro">
+                    <h2 class="section-headline">Wat Je Kunt Verwachten</h2>
+
+                    <div class="expectation-grid">
+                        <div class="expectation-card">
+                            <div class="step-number">1</div>
+                            <h3>Assessment Gesprek (30 min)</h3>
+                            <p>We bespreken je huidige situatie, doelen en uitdagingen. Geen verplichtingen, alleen een eerlijk gesprek.</p>
+                        </div>
+
+                        <div class="expectation-card">
+                            <div class="step-number">2</div>
+                            <h3>Gepersonaliseerd Plan</h3>
+                            <p>Op basis van het gesprek stellen we een transformatieplan voor dat aansluit bij jouw leven en doelen.</p>
+                        </div>
+
+                        <div class="expectation-card">
+                            <div class="step-number">3</div>
+                            <h3>Beslissen & Starten</h3>
+                            <p>Neem de tijd om te beslissen. Als het past, starten we direct met je 12-weken transformatie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acuity Scheduling Embed -->
+                <div class="booking-calendar">
+                    <h2 class="section-headline text-center">Kies Een Datum & Tijd</h2>
+
+                    <!-- Option 1: Button-triggered popup -->
+                    <div class="acuity-button-wrapper text-center">
+                        <a href="https://rewire.as.me/" target="_blank" class="acuity-embed-button btn btn-primary btn-large">PLAN NU EEN AFSPRAAK</a>
+                    </div>
+
+                    <!-- Option 2: Embedded iframe (uncomment to use) -->
+                    <!--
+                    <div class="acuity-iframe-wrapper">
+                        <iframe src="https://rewire.as.me/schedule.php"
+                                width="100%"
+                                height="800"
+                                frameBorder="0"
+                                title="Plan een afspraak met RE.WIRE"
+                                style="border: 4px solid var(--color-eerie-black);"></iframe>
+                        <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+                    </div>
+                    -->
+                </div>
+
+                <!-- Multi-Step Application Form (Alternative/Backup) -->
+                <div class="application-form-section" style="margin-top: var(--space-12);">
+                    <h2 class="section-headline text-center">Of Vul Direct Het Aanmeldformulier In</h2>
+                    <p class="text-center" style="margin-bottom: var(--space-8);">We nemen binnen 24 uur contact met je op om een afspraak in te plannen.</p>
+
+                    <div class="form-container">
+                        <form name="application" method="POST" action="/bedankt-aanmelding" netlify-honeypot="bot-field" data-netlify="true">
+                            <input type="hidden" name="form-name" value="application">
+                            <p style="display: none;">
+                                <label>Laat dit veld leeg: <input name="bot-field"></label>
+                            </p>
+
+                            <!-- Step indicator could be added here -->
+                            <div class="form-step active" id="step-1">
+                                <h3>Stap 1: Jouw Gegevens</h3>
+
+                                <div class="form-group">
+                                    <label for="firstName">Voornaam <span class="required">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lastName">Achternaam <span class="required">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="emailApp">E-mail <span class="required">*</span></label>
+                                    <input type="email" id="emailApp" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phoneApp">Telefoonnummer <span class="required">*</span></label>
+                                    <input type="tel" id="phoneApp" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-step" id="step-2" style="display: none;">
+                                <h3>Stap 2: Jouw Doelen</h3>
+
+                                <div class="form-group">
+                                    <label for="goals">Wat zijn je belangrijkste fitnessdoelen? <span class="required">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label><input type="checkbox" name="goals[]" value="gewichtsverlies"> Gewichtsverlies</label>
+                                        <label><input type="checkbox" name="goals[]" value="spieropbouw"> Spieropbouw</label>
+                                        <label><input type="checkbox" name="goals[]" value="energie"> Meer energie</label>
+                                        <label><input type="checkbox" name="goals[]" value="stress"> Stress reductie</label>
+                                        <label><input type="checkbox" name="goals[]" value="gezondheid"> Algemene gezondheid</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="fitnessLevel">Huidig fitnessniveau <span class="required">*</span></label>
+                                    <select id="fitnessLevel" name="fitnessLevel" required>
+                                        <option value="">Kies een niveau</option>
+                                        <option value="beginner">Beginner - Weinig tot geen ervaring</option>
+                                        <option value="intermediate">Gemiddeld - Enige ervaring</option>
+                                        <option value="advanced">Gevorderd - Regelmatig actief</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-step" id="step-3" style="display: none;">
+                                <h3>Stap 3: Programma Selectie</h3>
+
+                                <div class="form-group">
+                                    <label for="program">Welk programma interesseert je? <span class="required">*</span></label>
+                                    <select id="program" name="program" required>
+                                        <option value="">Kies een programma</option>
+                                        <option value="on-locatie">RE.WIRE PROJECT OP LOCATIE (€1.799)</option>
+                                        <option value="add-on">RE.WIRE PROJECT ADD-ON (€999)</option>
+                                        <option value="not-sure">Nog niet zeker - wil advies</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="startDate">Gewenste startdatum <span class="required">*</span></label>
+                                    <input type="date" id="startDate" name="startDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="additionalInfo">Extra opmerkingen of vragen</label>
+                                    <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-navigation">
+                                <button type="button" id="prevBtn" class="btn btn-secondary" style="display: none;">Vorige</button>
+                                <button type="button" id="nextBtn" class="btn btn-primary">Volgende</button>
+                                <button type="submit" id="submitBtn" class="btn btn-primary btn-large" style="display: none;">AANMELDEN</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section class="trust-section">
+            <div class="container">
+                <h2 class="section-headline text-center">Waarom RE.WIRE?</h2>
+
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <h3>200+ Transformaties</h3>
+                        <p>We hebben meer dan 200 professionals geholpen met blijvende resultaten.</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <h3>Evidence-Based</h3>
+                        <p>Onze methodiek is gebaseerd op wetenschappelijk onderzoek en bewezen principes.</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <h3>Holistische Aanpak</h3>
+                        <p>We werken aan alle 6 pilaren: training, voeding, slaap, werk, sociaal en veerkracht.</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <h3>Geen Verplichtingen</h3>
+                        <p>Het assessment gesprek is gratis en vrijblijvend. Pas starten als het voor jou past.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-headline">Veelgestelde Vragen</h2>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Zijn er kosten aan het assessment verbonden?</h3>
+                        <p>Nee, het assessment gesprek is volledig gratis en vrijblijvend. Je beslist daarna of je wilt starten.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Hoe lang duurt het assessment?</h3>
+                        <p>Het gesprek duurt ongeveer 30 minuten. We nemen de tijd om je situatie goed te begrijpen.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Kan ik direct beginnen na het assessment?</h3>
+                        <p>Ja, als je direct wilt starten kunnen we vaak binnen een week beginnen, afhankelijk van beschikbaarheid.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Wat als ik de afspraak moet verzetten?</h3>
+                        <p>Geen probleem. Je kunt tot 24 uur voor de afspraak kosteloos verzetten via de bevestigingsmail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>RE.WIRE</h3>
+                    <p>Evidence-based fitness coaching voor veeleisende professionals in Amsterdam</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Programma's</h4>
+                    <ul>
+                        <li><a href="/on-locatie">RE.WIRE PROJECT OP LOCATIE</a></li>
+                        <li><a href="/add-on">RE.WIRE PROJECT ADD-ON</a></li>
+                        <li><a href="/tarieven">Tarieven</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Over</h4>
+                    <ul>
+                        <li><a href="/over-ons">Over Ons</a></li>
+                        <li><a href="/succesverhalen">Succesverhalen</a></li>
+                        <li><a href="/kennisbank">Kennisbank</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <address>
+                        Hoogoorddreef 3<br>
+                        1101 BA Amsterdam<br>
+                        Nederland<br>
+                        <a href="tel:+31970102867 98">+31 97010 286798</a><br>
+                        <a href="mailto:info@rewireproject.nl">info@rewireproject.nl</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="/privacybeleid">Privacybeleid</a>
+                    <a href="/cookiebeleid">Cookiebeleid</a>
+                    <a href="/algemene-voorwaarden">Algemene Voorwaarden</a>
+                </div>
+                <p class="copyright">&copy; 2025 RE.WIRE. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js" defer></script>
+    <script>
+        // Multi-step form navigation
+        (function() {
+            let currentStep = 1;
+            const totalSteps = 3;
+
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    if (validateStep(currentStep)) {
+                        showStep(currentStep + 1);
+                    }
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    showStep(currentStep - 1);
+                });
+            }
+
+            function showStep(step) {
+                // Hide all steps
+                document.querySelectorAll('.form-step').forEach(function(stepEl) {
+                    stepEl.style.display = 'none';
+                });
+
+                // Show current step
+                const currentStepEl = document.getElementById('step-' + step);
+                if (currentStepEl) {
+                    currentStepEl.style.display = 'block';
+                }
+
+                currentStep = step;
+
+                // Update button visibility
+                prevBtn.style.display = step === 1 ? 'none' : 'inline-block';
+                nextBtn.style.display = step === totalSteps ? 'none' : 'inline-block';
+                submitBtn.style.display = step === totalSteps ? 'inline-block' : 'none';
+            }
+
+            function validateStep(step) {
+                const stepEl = document.getElementById('step-' + step);
+                const inputs = stepEl.querySelectorAll('input[required], select[required], textarea[required]');
+                let valid = true;
+
+                inputs.forEach(function(input) {
+                    if (!input.value.trim()) {
+                        valid = false;
+                        input.classList.add('error');
+                    } else {
+                        input.classList.remove('error');
+                    }
+                });
+
+                return valid;
+            }
+        })();
+    </script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="YOUR-COOKIEBOT-ID" data-blockingmode="auto" type="text/javascript"></script>
+</body>
+</html>

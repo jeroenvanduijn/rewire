@@ -1,0 +1,22 @@
+{
+  "name": "rewire-website",
+  "version": "1.0.0",
+  "description": "RE.WIRE fitness coaching website - StoryBrand framework implementation",
+  "scripts": {
+    "start": "npx serve",
+    "dev": "npx serve",
+    "test": "echo \"Run accessibility and performance tests\" && exit 0"
+  },
+  "keywords": [
+    "fitness",
+    "coaching",
+    "amsterdam",
+    "storybrand",
+    "wellness"
+  ],
+  "author": "RE.WIRE",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {}
+}
