@@ -1,0 +1,15 @@
+# Netlify Redirects File (alternative to netlify.toml)
+
+/on-locatie                /on-locatie.html              200
+/add-on                    /add-on.html                  200
+/tarieven                  /tarieven.html                200
+/succesverhalen            /succesverhalen.html          200
+/over-ons                  /over-ons.html                200
+/kennisbank                /kennisbank/index.html        200
+/contact                   /contact.html                 200
+/plan-afspraak             /plan-afspraak.html           200
+/bedankt                   /bedankt.html                 200
+/bedankt-aanmelding        /bedankt-aanmelding.html      200
+/privacybeleid             /privacybeleid.html           200
+/cookiebeleid              /cookiebeleid.html            200
+/algemene-voorwaarden      /algemene-voorwaarden.html    200

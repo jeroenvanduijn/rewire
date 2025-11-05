@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/on-locatie",
+      "dest": "/on-locatie.html"
+    },
+    {
+      "src": "/add-on",
+      "dest": "/add-on.html"
+    },
+    {
+      "src": "/tarieven",
+      "dest": "/tarieven.html"
+    },
+    {
+      "src": "/succesverhalen",
+      "dest": "/succesverhalen.html"
+    },
+    {
+      "src": "/over-ons",
+      "dest": "/over-ons.html"
+    },
+    {
+      "src": "/kennisbank",
+      "dest": "/kennisbank/index.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html"
+    },
+    {
+      "src": "/plan-afspraak",
+      "dest": "/plan-afspraak.html"
+    },
+    {
+      "src": "/bedankt",
+      "dest": "/bedankt.html"
+    },
+    {
+      "src": "/bedankt-aanmelding",
+      "dest": "/bedankt-aanmelding.html"
+    },
+    {
+      "src": "/privacybeleid",
+      "dest": "/privacybeleid.html"
+    },
+    {
+      "src": "/cookiebeleid",
+      "dest": "/cookiebeleid.html"
+    },
+    {
+      "src": "/algemene-voorwaarden",
+      "dest": "/algemene-voorwaarden.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

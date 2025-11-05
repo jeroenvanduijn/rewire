@@ -1,0 +1,105 @@
+# Netlify Configuration for RE.WIRE Website
+
+[build]
+  publish = "."
+
+# Redirect rules for clean URLs
+[[redirects]]
+  from = "/on-locatie"
+  to = "/on-locatie.html"
+  status = 200
+
+[[redirects]]
+  from = "/add-on"
+  to = "/add-on.html"
+  status = 200
+
+[[redirects]]
+  from = "/tarieven"
+  to = "/tarieven.html"
+  status = 200
+
+[[redirects]]
+  from = "/succesverhalen"
+  to = "/succesverhalen.html"
+  status = 200
+
+[[redirects]]
+  from = "/over-ons"
+  to = "/over-ons.html"
+  status = 200
+
+[[redirects]]
+  from = "/kennisbank"
+  to = "/kennisbank/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/plan-afspraak"
+  to = "/plan-afspraak.html"
+  status = 200
+
+[[redirects]]
+  from = "/bedankt"
+  to = "/bedankt.html"
+  status = 200
+
+[[redirects]]
+  from = "/bedankt-aanmelding"
+  to = "/bedankt-aanmelding.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacybeleid"
+  to = "/privacybeleid.html"
+  status = 200
+
+[[redirects]]
+  from = "/cookiebeleid"
+  to = "/cookiebeleid.html"
+  status = 200
+
+[[redirects]]
+  from = "/algemene-voorwaarden"
+  to = "/algemene-voorwaarden.html"
+  status = 200
+
+# 404 page
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
